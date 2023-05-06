@@ -4,6 +4,7 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import plotly.express as px
 from streamlit_option_menu import option_menu
+
 st.set_page_config(page_title="Price Tracker", page_icon=":moneybag:")
 
 selected = option_menu(None, ["Price Tracker", "Sales", "Purchases", "About"], orientation="horizontal")
