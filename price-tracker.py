@@ -47,7 +47,6 @@ def get_data(transaction_type) -> pd.DataFrame:
     except:
         st.error("Failed to load data from the database")
 
-st.balloons()
 if selected == "Price Tracker":
     df = get_data('bought_transactions')
     st.markdown("<h1 style='text-align: center;'>Price Tracker</h1>", unsafe_allow_html=True)
